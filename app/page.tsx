@@ -14,8 +14,8 @@ export default function Home() {
               src="/fo1.jpg"
               alt="Couple Image"
               className={styles.image}
-              width={100}
-              height={24}
+              width={400}
+              height={500}
               priority
             />
         </div>
