@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
-import styles from './page.module.css'
+import styles from './css/page.module.css'
 import SharedLayout from "./components/SharedLayout"
 
 const inter = Inter({ subsets: ['latin'] })
