@@ -1,4 +1,6 @@
 import './globals.css'
+import Navigation from "./components/Navigation"
+import Footer from "./components/Footer"
 
 export const metadata = {
   title: 'Folake and Oluwole',
@@ -12,7 +14,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <Navigation/>
+        {children}
+        <Footer/>
+        </body>
     </html>
   )
 }
