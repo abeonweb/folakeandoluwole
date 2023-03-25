@@ -5,9 +5,7 @@ import Link from "next/link"
 const Navigation = () => {
   return (
     <header className={styles.header}>
-        {/* logo */}
         <h1 className={styles.title}>Folake &amp; Oluwole</h1>
-        {/* nav with ul */}
         <nav>
             <ul>
                 <li>
@@ -15,6 +13,9 @@ const Navigation = () => {
                 </li>
                 <li>
                     <Link href="/gallery">Gallery</Link>
+                </li>
+                <li>
+                    <Link href="#location">Locations</Link>
                 </li>
             </ul>
         </nav>
