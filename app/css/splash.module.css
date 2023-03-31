@@ -1,0 +1,27 @@
+.section {
+    padding-top: 10.5rem;
+  }
+  
+  .splashImageContainer {
+    min-height: 100vh;
+    width: 100vw;
+    /* margin: 10rem 0 0; */
+    padding: 10rem 2em 2em;
+    display: flex;
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* background: rgb(191,191,191);
+    background: linear-gradient(159deg, rgba(191,191,191,1) 2%, rgba(246,246,246,1) 35%, rgba(244,242,242,1) 76%, rgba(153,153,153,1) 98%); */
+   
+    background-image: url(/fo_logo.png);
+    background-position: center;
+    background-size: 60%;
+    background-repeat: no-repeat;
+  }
+  
+  @media (min-width: 400px) {
+    .splashImageContainer {
+      background-size: 300px;
+    }
+  }
