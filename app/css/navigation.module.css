@@ -1,34 +1,35 @@
 .header {
     width: 100%;
-    max-width: 600px;
     padding: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     position: fixed;
     top:0;
-    background-color: transparent;
+    background-color: rgba(255, 255, 255, 0.3);
     z-index: 100;
+    font-family: var(--tangerine-font), sans-serif;
 }
 
 .title {
-    font-family: var(--tangerine-font);
-    font-size: 2.5em;
+    font-size: 2.25em;
     font-weight: 700;
     text-align: center;
     text-transform: capitalize;
     letter-spacing: 4px;
-    padding: 1em 0 0;
+    padding: 1em 0 0.5em;
 }
 
 .linkFirstLetter {
     font-family: var(--tangerine-font);
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: 700;
 }
 
 .nav {
     padding: 1em 0;
+    max-width: 600px;
 }
 
 .navList {
@@ -40,6 +41,12 @@
 
 .navListItem {
     letter-spacing: 2px;
+    padding: 0.5em;
+    margin: 0 2em;
+}
+
+.active {
+    text-decoration: underline;
 }
 
 .footer {
