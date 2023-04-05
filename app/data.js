@@ -12,4 +12,30 @@ const photos = [
     { id: "11", src: "/london2.jpg", width: 1000, height: 800},
   ];
 
-  export default photos
+  const locations = [
+    { 
+        id:"engagement",
+        title: "Engagement",
+        time: "",
+        address: "Event Hall - Ikeja",
+        mapURL: "",
+        info: ""
+    },
+    { 
+        id:"wedding",
+        title: "Wedding at Church",
+        time: "",
+        address: "First Baptist Church - Ikeja",
+        mapURL: "",
+        info: ""
+    },
+    { 
+        id:"reception",
+        title: "Reception",
+        time: "",
+        address: "Event Hall - Ikeja",
+        mapURL: "",
+        info: ""
+    },
+  ]
+  export {photos, locations}
