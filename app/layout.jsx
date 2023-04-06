@@ -7,11 +7,7 @@ export const metadata = {
   description: 'Wedding site for the lovely couple.',
 }
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+export default function RootLayout({children,}) {
   return (
     <html lang="en">
       <body>

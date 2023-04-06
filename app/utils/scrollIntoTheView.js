@@ -1,5 +1,5 @@
-export const scrollIntoTheView =(id: string) =>{
-    let element = document.getElementById(id) as HTMLElement;
+export const scrollIntoTheView =(id) =>{
+    let element = document.getElementById(id);
     if (!element) return;
 
     element.scrollIntoView({
