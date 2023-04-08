@@ -42,21 +42,23 @@ export default function Locations() {
     },
     [searchParams]
   );
-  console.log(filterType);
-  const selectedLocations = filterType
-    ? locations.filter((loc) => filterType === loc.id)
-    : locations;
+
+  const selectedLocations =
+    filterType ? locations.filter((loc) => filterType == loc.id) : locations;
+    const display = selectedLocations.map((location) => (
+      <Location key={location.id} location={location} />
+    ))
   return (
     <section
       id="locations"
       className={`${styles.section} ${styles.container} ${styles.locationContainer}`}
     >
-      <h1 className={styles.mainTitle}>Information of Interest</h1>
+      <h1 className={styles.sectionTitle}>Information of Interest</h1>
       <nav>
-        <ul>
+        <ul className={styles.filterList}>
           <li>
             <button
-              className={styles.locationFilter}
+              className={filterType == "engagement"? styles["active"]: styles["locationFilterBtn"]}
               onClick={() => {
                 router.push(
                   pathName + "?" + createNewQuery("location", "engagement")
@@ -68,7 +70,7 @@ export default function Locations() {
           </li>
           <li>
             <button
-              className={styles.locationFilter}
+              className={filterType == "wedding"? styles["active"]: styles["locationFilterBtn"]}
               onClick={() => {
                 router.push(
                   pathName + "?" + createNewQuery("location", "wedding")
@@ -80,7 +82,7 @@ export default function Locations() {
           </li>
           <li>
             <button
-              className={styles.locationFilter}
+              className={filterType == "reception"? styles["active"]: styles["locationFilterBtn"]}
               onClick={() => {
                 router.push(
                   pathName + "?" + createNewQuery("location", "reception")
@@ -92,9 +94,9 @@ export default function Locations() {
           </li>
         </ul>
       </nav>
-      {selectedLocations.map((location) => (
-        <Location key={location.id} location={location} />
-      ))}
+      <div>
+        {display}
+      </div>
     </section>
   );
 }
