@@ -1,212 +1,64 @@
+.section{
+  margin-top: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
 
 .splashImageContainer {
-  min-height: 100vh;
-  width: 100vw;
-  padding: 1.5rem 2em 2em;
-  background: rgb(191,191,191);
-  background: url(/fo_logo.png), 
-  linear-gradient(159deg, rgba(255,255,255,1) 2%, rgba(202,202,203,1) 12%, rgba(219,218,221,1) 20%, rgba(255,255,255,1) 29%, rgba(244,242,242,1) 78%, rgba(202,202,203,1) 89%, rgba(255,255,255,1) 100%);
-  background-position: center, left top;
-  background-size: 60%, cover;
-  background-repeat: no-repeat, no-repeat;
+  width: 100%;
+  background: rgba(191,191,191,0.5);
   position: relative;
-  overflow: hidden;
 }
 
-.heart {
+.splashImage {
+  width: 100%;
+  background: rgba(191,191,191,0.5);
+}
+
+.textContainer {
   position: absolute;
-  user-select: none;
+  top: 50%;
+  display: flex;
+  justify-content: center;
 }
 
-.heartImage1,
-.heartImage2,
-.heartImage3,
-.heartImage4 {
-  z-index: 5;
-  opacity: 1;
+.textEffect {
+  margin: 0 auto;
+  
 }
 
-.redHeartImage1,
-.redHeartImage2,
-.redHeartImage3,
-.redHeartImage4 {
-  z-index: 10;
-  opacity: 0;
+.text {
+  font-size: 5em;
+  letter-spacing: 2px;
+  text-shadow: 1px 2px 3px #5f5e5e;
+  text-align: center;
+  padding: 0.5em;
+  color: #fff;
+  font-family: var(--pinyon-font);
+  
 }
 
-.heartImage1,
-.redHeartImage1 {
-  transform: rotate(27deg);
-  top: 14.2em;
-  left: 1.87em;
-}
-
-.heartImage2,
-.redHeartImage2 {
-  transform: rotate(54deg);
-  top: 17em;
-  right: 4.37em;
-}
-
-.heartImage3,
-.redHeartImage3 {
-  transform: rotate(314deg);
-  left: 2em;
-  bottom: 9em;
-}
-
-.heartImage4,
-.redHeartImage4 {
-  transform: rotate(77deg);
-  bottom: 4em;
-  right: 2.87em;
-}
-
-.redHeartImage1 {
-  animation: colourBeat 6s ease-in-out 13s;
-}
-.redHeartImage2 {
-  animation: colourBeat 6s ease-in-out 26s;
-}
-.redHeartImage3 {
-  animation: colourBeat 6s ease-in-out 39s;
-}
-.redHeartImage4 {
-  animation: colourBeat 6s ease-in-out 52s;
-}
-
-.heartImage1 {
-  animation: fadeOut 6s ease-in-out 13s;
-}
-.heartImage2 {
-  animation: fadeOut 6s ease-in-out 26s;
-}
-.heartImage3 {
-  animation: fadeOut 6s ease-in-out 39s;
-}
-
-.heartImage4 {
-  animation: fadeOut 6s ease-in-out 52s;
-}
-
-@media (min-width: 400px) {
+@media (min-width: 900px) {
   .splashImageContainer {
-    background-size: 300px, cover;
+    background-position: left;
+    background-size: 40% 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
   }
   
-  .heartImage1,
-  .redHeartImage1 {
-    transform: rotate(27deg);
-    top: 14.2em;
-    left: 1.87em;
+  .textContainer {
+    width: 50%;  
   }
-  
-  .heartImage2,
-  .redHeartImage2 {
-    transform: rotate(54deg);
-    top: 17em;
-    right: 4.37em;
-  }
-  
-  .heartImage3,
-  .redHeartImage3 {
-    left: 30vw;
-    bottom: 18em;
-  }
-  
-  .heartImage4,
-  .redHeartImage4 {
-    transform: rotate(77deg);
-    bottom: 4em;
-    right: 2.87em;
+
+  .text {
+    font-size: 8em;
   }
 }
-
-
-@keyframes colourBeat {
-  0%{
-    opacity: 0;
-  }
-  30%{
-    opacity: 1;
-    scale: 1;
-  }
-  40%{
-        opacity: 1;
-        scale: 1.11;
-      }
-      50%{
-        opacity: 1;
-        scale: 1;
-      }
-      60%{
-        opacity: 1;
-        scale: 1.18;
-      }
-      70%{
-        opacity: 1;
-        scale: 1;
-      }
-      100% {
-        opacity: 0;
-      }
-    }
-
-    @keyframes fadeOut {
-      0%{
-        opacity: 1;
-      }
-      30%{
-        opacity: 0;
-        scale: 1;
-      }
-      40%{
-        opacity: 0;
-        scale: 1.11;
-      }
-      50%{
-        opacity: 0;
-        scale: 1;
-      }
-      60%{
-        opacity: 0;
-        scale: 1.18;
-      }
-      70%{
-        opacity: 0;
-        scale: 1;
-      }
-      100% {
-        opacity: 1;
-      }
-    }
-
-    @keyframes fadeIn {
-      0%{
-        opacity: 0;
-      }
-      100% {
-        opacity: 1;
-      }
-      
-    }
-
-    
-    @keyframes beat {
-      0%{
-        scale: 1;
-      }
-      25% {
-        scale: 1.11;
-      }
-      50% {
-        scale: 1;
-      }
-      75%{
-        scale: 1.22;
-      }
-      100%{
-        scale: 1;
-      }
-      
-    }
