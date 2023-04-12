@@ -1,11 +1,12 @@
 :root {
-  font-family: var(--great-vibes-font);
+  font-family: var(--inter-font);
   font-size: 62.5%;
 
-  --clr-light: #e8e8e8;
-  --clr-dark: #1d1c50;
-  --clr-dark-2: #020235;
-  --clr-highlight: #dd7702;
+  --color-primary: #434344;
+  --color-secondary: #f4f4f4;
+  --color-dark: #535355;
+  --color-highlight: rgba(234, 2, 234, 1);
+  --color-highlight2: #30D5C8;
 }
 
 @media (prefers-color-scheme: light) {
@@ -29,8 +30,8 @@ body {
   min-height: 100%;
   font-family: var(--inter-font);
   background-color: aliceblue;
-  background: url(/colorbg.jpg), 
-  linear-gradient(159deg, rgba(255,255,255,0.65) 2%, rgba(202,202,203,0.65) 12%, rgba(219,218,221,0.65) 20%, rgba(255,255,255,0.65) 29%, rgba(244,242,242,0.65) 78%, rgba(202,202,203,0.65) 89%, rgba(255,255,255,0.65) 100%);;
+  background: url(https://res.cloudinary.com/abeonweb/image/upload/c_scale,w_1200/v1681302015/background_yvr46u.jpg),
+  linear-gradient(159deg, rgba(255,255,255,0.65) 2%, rgba(202,202,203,0.65) 12%, rgba(219,218,221,0.65) 20%, rgba(255,255,255,0.65) 29%, rgba(244,242,242,0.65) 78%, rgba(202,202,203,0.65) 89%, rgba(255,255,255,0.65) 100%);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
