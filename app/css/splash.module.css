@@ -1,5 +1,4 @@
-.section{
-  margin-top: 0;
+.section {
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -10,13 +9,15 @@
 
 .splashImageContainer {
   width: 100%;
-  background: rgba(191,191,191,0.5);
+  height: 100%;
+  background: rgba(191, 191, 191, 0.5);
   position: relative;
 }
 
 .splashImage {
   width: 100%;
-  background: rgba(191,191,191,0.5);
+  height: 100%;
+  background: rgba(191, 191, 191, 0.5);
 }
 
 .textContainer {
@@ -28,7 +29,7 @@
 
 .textEffect {
   margin: 0 auto;
-  
+
 }
 
 .text {
@@ -39,23 +40,32 @@
   padding: 0.5em;
   color: #fff;
   font-family: var(--pinyon-font);
-  
+
 }
 
 @media (min-width: 900px) {
+  .section {
+    flex-direction: row;
+    position: relative;
+  }
+
+  .textContainer {
+    position: relative;
+  }
+
   .splashImageContainer {
-    background-position: left;
-    background-size: 40% 100%;
-    background-repeat: no-repeat;
+    width: 35%;
+    height: auto;
     position: relative;
     overflow: hidden;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
   }
-  
+
+  .splashImage{
+    object-fit: cover;
+  }
+
   .textContainer {
-    width: 50%;  
+    width: 50%;
   }
 
   .text {
